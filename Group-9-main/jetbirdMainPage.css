@@ -1,0 +1,696 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.bookinformJB{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.bookinformJB span{
+    color: black
+}
+
+.containerJB {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.containerTitleJB {
+    text-align: center;
+    padding: 60px 0 100px;
+    font-size: 32px;
+    font-family: "Righteous", sans-serif;
+    text-transform: uppercase;
+}
+
+.containerTitleJB::after {
+    content: '';
+    width: 80px;
+    background: skyblue;
+    height: 5px;
+    display: block;
+    margin: 7px auto 0;
+    border-radius: 8px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: skyblue;
+}
+
+nav {
+    display: flex;
+    padding: 15px 0 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+nav .navlogoJB a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav .navlogoJB a img {
+    max-width: 55px;
+}
+
+nav .navlogoJB h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: skyblue;
+    background-color: skyblue;
+}
+
+#click {
+    display: none;
+}
+
+.homeJB {
+    background-image: url('imagesJB/1.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.homecontainerJB {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    padding-top: 85px;
+    min-height: calc(100vh - 85px);
+    justify-content: space-between;
+}
+
+.homecontainerJB .textSectionJB h2 {
+    font-size: 40px;
+    color: skyblue;
+}
+
+.homecontainerJB .textSectionJB h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    margin-top: 8px;
+}
+
+.homecontainerJB .textSectionJB p {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin: 24px 0 40px;
+    max-width: 70%;
+}
+
+.homecontainerJB .mainSectionBttnJB {
+    display: flex;
+    gap: 24px;
+}
+
+.homecontainerJB .mainSectionBttnJB .BttnJB {
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: skyblue;
+    color: skyblue;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.homecontainerJB .mainSectionBttnJB .BttnJB:last-child {
+    color: white;
+    border-color: white;
+    background: none;
+}
+
+.homecontainerJB .mainSectionBttnJB .BttnJB:first-child:hover {
+    color: white;
+    background: transparent;
+    border-color: white;
+}
+
+.homecontainerJB .mainSectionBttnJB .BttnJB:last-child:hover {
+    color: skyblue;
+    background: skyblue;
+    border-color: skyblue;
+}
+
+.bookJB {
+    padding: 60px 20px 120px;
+    background: grey;
+    color: white;
+}
+
+.bookingContainerJB {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.containerBooking {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.containerBooking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.bookingFormGrpJB .formGroupJB {
+    margin-bottom: 15px;
+}
+
+.bookingFormGrpJB .formGroupJB label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.bookingFormGrpJB .formGroupJB input,
+.bookingFormGrpJB .formGroupJB select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.bookingFormGrpJB .formGroupJB input:focus,
+.bookingFormGrpJB .formGroupJB select:focus {
+    border-color: #007bff;
+}
+
+.bookBttn{
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.bookBttn:hover {
+    background-color: #0056b3;
+}
+
+.servicesJB {
+    background: white;
+    color: black;
+    padding: 60px 20px 120px;
+}
+
+.servicesJB .serviceContainerJB {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerJB .servicesItemsJB img {
+    width: 100%;
+}
+
+.containerJB .servicesItemsJB {
+    width: calc(100% / 3 - 120px);
+}
+
+.servicesItemsJB .servicesTextJB {
+    text-align: center;
+}
+
+.servicesItemsJB .servicesTextJB h3 {
+    margin: 12px 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.servicesItemsJB .servicesTextJB p {
+    font-size: 17px;
+}
+
+.aboutJB {
+    background: #f2f2f2;
+    padding: 60px 20px 120px;
+}
+
+.aboutJB .aboutContainerJB {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutContainerJB .aboutItemsJB img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.aboutContainerJB .aboutItemsJB {
+    width: calc(100% / 3 - 80px);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.aboutItemsJB .aboutTextJB {
+    text-align: center;
+}
+
+.aboutItemsJB .aboutTextJB h3 {
+    margin: 20px 0;
+    font-size: 22px;
+}
+
+.aboutItemsJB .aboutTextJB p {
+    font-size: 17px;
+}
+
+.galleryJB {
+    background: white;
+    padding: 60px 20px 100px;
+}
+
+.galleryJB .galleryContainerJB {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galleryContainerJB .galleryItemsJB {
+    width: calc(100% / 3 - 32px);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.galleryJB .galleryContainerJB img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.galleryContainerJB .galleryItemsJB:hover img {
+    transform: scale(1.3);
+}
+
+.contactJB {
+    background: #f2f2f2;
+    padding: 60px 20px 100px;
+}
+
+.contactContainerJB {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactContainerJB .contactFormJB {
+    max-width: 65%;
+    width: 100%;
+}
+
+.contactContainerJB .contactFormJB .fieldJB {
+    margin: 20px 0;
+}
+
+.contactContainerJB .contactFormJB .fieldJB label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.contactContainerJB .contactFormJB .fieldJB input {
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contactContainerJB .contactFormJB textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.contactContainerJB .contactFormJB .BttnJB {
+    padding: 8px 28px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: skyblue;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.contactContainerJB .contactFormJB .BttnJB:hover {
+    color: skyblue;
+    background: transparent;
+    border-color: skyblue;
+}
+
+.contactTextJB .contactItemsJB {
+    display: flex;
+    gap: 20px;
+    margin: 80px 0;
+}
+
+.contactTextJB .contactItemsJB i {
+    font-size: 32px;
+    margin-top: 5px;
+}
+
+footer {
+    background: #1b1b1b;
+    color: white;
+    padding: 60px 20px;
+}
+
+.footerSectionJB {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSectionJB h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.footerSectionJB .footerLogoJB a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.footerSectionJB .footerLogoJB a img {
+    max-width: 55px;
+}
+
+.footerSectionJB .footerLogoJB a h2 {
+    font-weight: 600;
+}
+
+.footerSectionJB .linksJB ul li {
+    margin: 20px 0;
+}
+
+.footerSectionJB .linksJB ul li a {
+    color: white;
+    font-size: 17px;
+}
+
+.footerSectionJB .linksJB ul li a:hover {
+    text-decoration: underline;
+}
+
+.footerSectionJB .contactUsJB ul li {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footerSectionJB .contactUsJB ul li i {
+    font-size: 25px;
+}
+
+.footerSectionJB .contactUsJB ul li span {
+    font-size: 17px;
+}
+
+.footerSectionJB .followUsJB i {
+    font-size: 26px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footerSectionJB .followUsJB i:hover {
+    color: skyblue;
+}
+
+
+/* Responsive Media Query code for max-width: 1024px */
+
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    label .menu_btnJB {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        background: white;
+        position: absolute;
+        top: 75px;
+        left: -100%;
+        overflow-y: auto;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.15s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    #click:checked~label .close_btn {
+        display: block;
+    }
+
+    #click:checked~label .menu_btnJB {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 8px 12px;
+        width: 48%;
+        margin: 24px auto;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    .homecontainerJB {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    .homecontainerJB .textSectionJB {
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homecontainerJB .textSectionJB p {
+        max-width: 100%;
+    }
+
+    .bookingContainerJB {
+        flex-direction: column;
+    }
+
+    .bookingContainerJB .textSectionJB {
+        max-width: 100%;
+    }
+
+    .servicesJB .serviceContainerJB {
+        gap: 50px;
+    }
+
+    .containerJB .servicesItemsJB {
+        width: calc(100% / 2 - 50px);
+    }
+
+    .aboutJB .aboutContainerJB {
+        gap: 50px;
+    }
+
+    .aboutContainerJB .aboutItemsJB {
+        width: calc(100% / 2 - 50px);
+    }
+
+    .galleryJB .galleryContainerJB {
+        justify-content: center;
+    }
+
+    .galleryContainerJB .galleryItemsJB {
+        width: calc(100% / 2 - 50px);
+    }
+
+    .contactContainerJB {
+        flex-direction: column-reverse;
+    }
+
+    .contactTextJB .contactItemsJB {
+        margin: 25px 0;
+    }
+
+    .contactContainerJB .contactFormJB {
+        max-width: 100%;
+    }
+
+    .footerSectionJB {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footerSectionJB .linksJB {
+        text-align: start;
+    }
+}
+
+/* Responsive Media Query code for max-width: 576px */
+@media screen and (max-width: 576px) {
+    .containerTitleJB {
+        padding: 50px 0;
+    }
+
+    nav .navlogoJB a img,
+    .footerSectionJB .footerLogoJB a img {
+        max-width: 45px;
+    }
+
+    nav .navlogoJB h2 {
+        font-size: 30px;
+    }
+
+    .homecontainerJB {
+        justify-content: space-evenly;
+    }
+
+    .homecontainerJB .textSectionJB h2 {
+        font-size: 30px;
+    }
+
+    .homecontainerJB .textSectionJB h3 {
+        font-size: 26px;
+    }
+
+    .homecontainerJB .image_section img {
+        max-width: 80%;
+    }
+
+    .homecontainerJB .textSectionJB p {
+        font-size: 17px;
+    }
+
+    .bookingContainerJB .image_section {
+        max-width: 70%;
+    }
+
+    .BttnJB {
+        padding: 10px 20px !important;
+        font-size: 15px !important;
+    }
+
+    .containerJB .servicesItemsJB,
+    .aboutContainerJB .aboutItemsJB {
+        width: 100%;
+        text-align: center;
+    }
+
+    .galleryContainerJB .galleryItemsJB {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .servicesJB .serviceContainerJB,
+    .aboutJB .aboutContainerJB {
+        gap: 70px;
+    }
+
+    .containerJB .servicesItemsJB img {
+        max-width: 80%;
+    }
+}
